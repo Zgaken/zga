@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>成績結果</title>
+</head>
+<body>
+    <h1>{{ student_name }} 的成績</h1>
+    <ul>
+        {% for subject, grade in grades.items() %}
+            <li>{{ subject }}：{{ grade }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
